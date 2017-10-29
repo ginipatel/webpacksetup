@@ -7,3 +7,4 @@ src/libraries/
 src/scss/fonts/
 node_modules
 src/bower_components
+/node_modules/
