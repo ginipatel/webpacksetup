@@ -1,0 +1,9 @@
+
+.gitignore
+.idea/inspectionProfiles/
+src/bower_components/bootstrap-sass/assets/images/
+src/images/
+src/libraries/
+src/scss/fonts/
+node_modules
+src/bower_components
