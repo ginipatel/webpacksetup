@@ -19,11 +19,13 @@
 </head>
 <body>
 <h1>Webpack boiler plate1</h1>
-<h2>this is body text12</h2>
+<h2>this is body text</h2>
+<div w3-include-html="navigation.html"></div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="<%= htmlWebpackPlugin.options.serverLocation%>bower_components/jquery/dist/jquery.js"></script>
+<script src="<%= htmlWebpackPlugin.options.serverLocation%>libraries/w3.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="<%= htmlWebpackPlugin.options.serverLocation%>bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+<!--<script src="<%= htmlWebpackPlugin.options.serverLocation%>bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>-->
 </body>
 </html>

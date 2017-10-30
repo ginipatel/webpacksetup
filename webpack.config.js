@@ -99,13 +99,21 @@ module.exports = function (env) {
                 chunks: ['app'],
                 cache:false,
                 template: './src/templates/home.html'
+            }),
+            new HtmlWebpackPlugin({
+                title: 'Navigation page',
+                filename:'navigation.html',
+                serverLocation:serverLocation,
+                hash: true,
+                cache:false,
+                template: './src/templates/navigation.html'
             })
             ,new webpack.DefinePlugin({
                 ENV: JSON.stringify(env)
             }),
             new CopyWebpackPlugin([
                 {from: 'src/bower_components', to: 'bower_components'},
-                // {from: 'src/libraries/bluebird.min.js', to: 'js'},
+                {from: 'src/libraries/w3.js', to: 'libraries'},
                 {from: 'src/images', to: 'images'}
             ]),
             new webpack.HotModuleReplacementPlugin(),
